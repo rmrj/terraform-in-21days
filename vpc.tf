@@ -1,22 +1,5 @@
 locals {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  public_cidr        = ["10.0.0.0/24", "10.0.1.0/24"]
-  private_cidr       = ["10.0.100.0/24", "10.0.101.0/24"]
-=======
->>>>>>> 20ca788 (used variables to define envcode and public/private cidrs)
   availability_zones = ["us-west-1a", "us-west-1b"]
-=======
-  public_cidr        = ["10.0.0.0/24", "10.0.1.0/24", "10.0.2.0/24"]
-  private_cidr       = ["10.0.100.0/24", "10.0.101.0/24", "10.0.103.0/24"]
-  availability_zones = ["us-west-1a", "us-west-1b", "us-west-1c"]
->>>>>>> da2defa (used count and global local variables)
-=======
-  public_cidr        = ["10.0.0.0/24", "10.0.1.0/24"]
-  private_cidr       = ["10.0.100.0/24", "10.0.101.0/24"]
-  availability_zones = ["us-west-1a", "us-west-1b"]
->>>>>>> 71d114b (UPDATED used count and global local variables)
 }
 
 resource "aws_vpc" "main" {
